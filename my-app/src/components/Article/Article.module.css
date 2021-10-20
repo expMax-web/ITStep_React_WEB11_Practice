@@ -1,0 +1,20 @@
+.ArticleContainer {
+  margin: 0 auto 100px auto;
+  width: 800px;
+}
+
+.ArticleTitle {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.ArticleSubTitle {
+  text-align: center;
+  font-size: 22px;
+  margin: 30px 0;
+}
+
+.ArticleText {
+  font-size: 18px;
+  text-align: justify;
+}
