@@ -1,37 +1,21 @@
-import { Article } from "./components/Article/Article";
+import { Biography } from "./pages/Biography/Biography";
+import { Redirect, Route, Switch, withRouter } from "react-router-dom";
+import { ArtGallery } from "./pages/ArtGallery/ArtGallery";
+import { FavoritePicture } from "./pages/FavoritePicture";
+import { Navbar } from "./components/navbar/navbar";
 
 function App() {
   return (
     <div className="App">
-      <Article
-        title="Главный заголовок статьи 1"
-        subtitle="Подзаголовок статьи 1 "
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae impedit
-        accusamus deleniti nesciunt quas, accusantium repellendus nostrum
-        voluptatibus ipsam, perspiciatis quasi. Labore amet aperiam sint
-        incidunt consequatur illo laudantium necessitatibus.
-      </Article>
-      <Article
-        title="Главный заголовок статьи 2"
-        subtitle="Подзаголовок статьи 2"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae impedit
-        accusamus deleniti nesciunt quas, accusantium repellendus nostrum
-        voluptatibus ipsam, perspiciatis quasi. Labore amet aperiam sint
-        incidunt consequatur illo laudantium necessitatibus.
-      </Article>
-      <Article
-        title="Главный заголовок статьи 3"
-        subtitle="Подзаголовок статьи 3"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae impedit
-        accusamus deleniti nesciunt quas, accusantium repellendus nostrum
-        voluptatibus ipsam, perspiciatis quasi. Labore amet aperiam sint
-        incidunt consequatur illo laudantium necessitatibus.
-      </Article>
+      <Navbar />
+      <Switch>
+        <Route path="/Biography" component={Biography} />
+        <Route path="/ArtGallery" component={ArtGallery} />
+        <Route path="/FavoritePicture" component={FavoritePicture} />
+        <Redirect from="/" to="/Biography" />
+      </Switch>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
