@@ -1,7 +1,7 @@
 import { Biography } from "./pages/Biography/Biography";
 import { Redirect, Route, Switch, withRouter } from "react-router-dom";
 import { ArtGallery } from "./pages/ArtGallery/ArtGallery";
-import { FavoritePicture } from "./pages/FavoritePicture";
+import { FavoritePicture } from "./pages/FavoritePicture/FavoritePicture";
 import { Navbar } from "./components/navbar/navbar";
 
 function App() {

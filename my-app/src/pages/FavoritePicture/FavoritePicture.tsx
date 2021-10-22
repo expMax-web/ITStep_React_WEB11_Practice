@@ -1,15 +1,21 @@
+import styles from "./FavoritePicture.module.scss";
+
 export const FavoritePicture = () => {
   return (
-    <main>
-      <div>
-        <figure>
-          <p>
-            <img src="./scale_2400.jfif" alt="Подсолнухи" />
-          </p>
-          <figcaption>Подсолнухи</figcaption>
-        </figure>
-      </div>
-      <div>
+    <main className={styles.MainContainer}>
+      <figure>
+        <p>
+          <img
+            className={styles.FavoritePictureImg}
+            src="./scale_2400.jfif"
+            alt="Подсолнухи"
+          />
+        </p>
+        <figcaption className={styles.FavoritePictureName}>
+          Подсолнухи
+        </figcaption>
+      </figure>
+      <div className={styles.FavoritePictureDescription}>
         <p>
           Это самая знаменитая серия картин художника. Большинство полотен он
           написал в Арли. Август 1888 года выдался для Ван Гога очень

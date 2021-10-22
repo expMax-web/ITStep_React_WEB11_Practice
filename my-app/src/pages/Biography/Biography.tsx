@@ -1,18 +1,19 @@
+import styles from "./Biography.module.scss";
+
 export const Biography = () => {
   return (
-    <main>
-      <div>
-        <figure>
-          <p>
-            <img
-              src="./Autoportrait_de_Vincent_van_Gogh.jfif"
-              alt="Autoportrait_de_Vincent_van_Gogh"
-            />
-          </p>
-          <figcaption>Винсент Ван Гог</figcaption>
-        </figure>
-      </div>
-      <div>
+    <main className={styles.MainContainer}>
+      <figure>
+        <p>
+          <img
+            className={styles.ArtistAvatar}
+            src="./Autoportrait_de_Vincent_van_Gogh.jfif"
+            alt="Autoportrait_de_Vincent_van_Gogh"
+          />
+        </p>
+        <figcaption className={styles.ArtistName}>Винсент Ван Гог</figcaption>
+      </figure>
+      <div className={styles.BiographyContent}>
         <p>
           Винсе́нт Ви́ллем Ван Гог (нидерл. Vincent Willem van Gogh,
           нидерландский: [ˈvɪnsənt ˈʋɪləm vɑŋ ˈɣɔx] (Звук слушать); 30 марта

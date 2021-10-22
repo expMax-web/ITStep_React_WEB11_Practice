@@ -1,0 +1,19 @@
+.MainContainer {
+  display: flex;
+  padding: 0 100px;
+}
+.FavoritePictureImg {
+  width: 450px;
+}
+
+.FavoritePictureName {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.FavoritePictureDescription {
+  font-size: 30px;
+  width: 900px;
+  padding: 20px;
+}
